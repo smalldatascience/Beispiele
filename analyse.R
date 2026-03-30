@@ -1,5 +1,6 @@
 # load package
 library(ISLR)
+library(ggplot2)
 data(College, package="ISLR")
 
 # check if any observation contains missing info
@@ -11,6 +12,7 @@ str(College)
 # Fit a linear model
 m1 <- lm(Outstate ~ Expend, data=College)
 
+# Create simple scatter plot with labels
 plot(College$Expend, College$Outstate,
      xlab = "Instructional expenditure per student",
      ylab = "Out-of-state tuition")
