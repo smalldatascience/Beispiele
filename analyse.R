@@ -15,5 +15,5 @@ m1 <- lm(Outstate ~ Expend, data=College)
 # Create simple scatter plot with labels
 plot(College$Expend, College$Outstate,
      xlab = "New x-lab title",
-     ylab = "Out-of-state tuition")
+     ylab = "New y-lab title")
 abline(m1, col = "red", lwd = 3)
